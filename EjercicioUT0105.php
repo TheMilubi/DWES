@@ -6,8 +6,8 @@
     </head>
     <body>
         <?php
-        $x = 144;
-        $y = 999;
+        $x = 100;
+        $y = 200;
         echo "x = ", $x;
         echo "<br>y = ", $y;
         echo "<br>x + y = ", $x + $y;
