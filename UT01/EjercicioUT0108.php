@@ -6,7 +6,7 @@
   </head>
   <body>
     <?php
-      $euro = 6;
+      $euro = 100;
       function conversorPeseta($euros){
         $peseta = $euros * 166.386;
         return $peseta;
