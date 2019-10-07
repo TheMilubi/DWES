@@ -6,13 +6,12 @@
     </head>
     <body>
         <?php
-        echo "<pre>";
-        echo "    *<br />";
-        echo "   ***<br />";
-        echo "  *****<br />";
-        echo " *******<br />";
-        echo "*********<br />";
-        echo "</pre>";
+            echo "<pre>";
+            echo "    *<br />";
+            echo "   ***<br />";
+            echo "  *****<br />";
+            echo " *******<br />";
+            echo "</pre>";
         ?>
     </body>
 </html>

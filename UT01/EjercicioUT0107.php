@@ -9,7 +9,7 @@
         $name = "Rubén Díaz<br>";
         $adress = "C/ Tablón, 12<br>";
         $phone = "Teléfono: 666 444 333";
-        echo $nombre . $direccion . $telefono;
+        echo $name . $adress . $phone;
         ?>
     </body>
 </html>
