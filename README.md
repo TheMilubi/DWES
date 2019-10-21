@@ -1,1 +1,5 @@
 # DWES
+
+- PHP
+- Python
+- SSH
