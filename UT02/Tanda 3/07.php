@@ -18,34 +18,35 @@ satisfactoriamente”. Tendremos cuatro oportunidades para abrir la caja fuerte.
         <input type="text" pattern="[0-9]{4}" name="passwd" id="passwd">
         <input type="submit" value="Abrir">
     </form>
-    <?php
-    session_start();
-    $_SESSION['c'] = 0;
-    $pass = "1234";
-    if(isset($_POST['passwd'])){
-    if ($_SESSION['c'] < 4){
-            $passwd = $_POST['passwd'];
-            if($passwd < 0 || $passwd > 9999){
-                echo 'Sólo se permiten números positivos de 4 cifras';
-            }
-            else{
-                if($pass === $passwd){
-                    echo 'La caja fuerte se ha abierto satisfactoriamente';
-                    $_SESSION['c'] = 0;
+    <p style="color:red">
+        <?php
+        session_start();
+        if (empty($_SESSION['c'])) {
+            $_SESSION['c'] = 0;
+        }
+        $pass = "1234";
+        if (isset($_POST['passwd'])) {
+            if ($_SESSION['c'] < 4) {
+                $passwd = $_POST['passwd'];
+                if ($passwd < 0 || $passwd > 9999) {
+                    echo 'Sólo se permiten números positivos de 4 cifras';
+                } else {
+                    if ($pass === $passwd) {
+                        echo 'La caja fuerte se ha abierto satisfactoriamente';
+                        $_SESSION['c'] = 0;
+                    } else {
+                        echo "Lo siento, esa no es la combinación<br>";
+                        $_SESSION['c'] = $_SESSION['c'] + 1;
+                        echo "Te quedan " . (4 - $_SESSION['c']) . " intentos.";
+                    }
                 }
-                else{
-                    echo "Lo siento, esa no es la combinación<br>";
-                    $_SESSION['c'] = $_SESSION['c'] + 1;
-                    echo "Te quedan " . (4 - $_SESSION['c']) . " intentos.";
-                }
+            } else {
+                echo "4 oportunidades agotadas;";
+                unset($_SESSION['c']);
             }
-        
-    }
-    else {
-        echo "4 oportunidades agotadas;";
-    }
-}
-    ?>
+        }
+        ?>
+    </p>
 </body>
 
 </html>
