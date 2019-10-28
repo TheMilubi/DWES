@@ -32,37 +32,18 @@
         <?php
         session_start();
         if (!empty($_POST['num'])) {
-            if (empty($_SESSION['count'])) {
-                $_SESSION['count'] = 0;
+
+            echo "<table>";
+            echo "<caption>Tabla de potencias</caption>";
+            for ($i = $_POST['num']; $i < ($_POST['num']+5); $i++) {
+                echo "<tr>";
+                echo "<td>$i</td>";
+                echo "<td>" . $i ** 2 . "</td>";
+                echo "<td>" . $i ** 3 . "</td>";
+                echo "</tr>";
             }
-            $_SESSION['count']++;
-            if ($_SESSION['count'] < 6) {
-                $num = $_POST['num'];
-                $_SESSION['array'][count($_SESSION['array'])] = $num;
-                echo 'Numeros: ';
-                foreach ($_SESSION['array'] as $valor) {
-                    echo $valor . " ";
-                }
-            } else {
-                echo "<table>";
-                echo "<caption>Tabla de potencias</caption>";
-                foreach ($_SESSION['array'] as $valor) {
-                    echo "<tr>";
-                    echo "<td>$valor</td>";
-                    echo "<td>" . $valor ** 2 . "</td>";
-                    echo "<td>" . $valor ** 3 . "</td>";
-                    echo "</tr>";
-                }
-                echo "</table>";
-                unset($_SESSION['array']);
-                unset($_SESSION['count']);
-            }
-        } else {
-            echo 'Numeros: ';
-            foreach ($_SESSION['array'] as $valor) {
-                echo $valor . " ";
-            }
-        }
+            echo "</table>";
+        } 
         ?>
     </p>
 </body>
