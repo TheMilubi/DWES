@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejercicio 16</title>
+    <title>Ejercicio 17</title>
 </head>
 
 <body>
-    <h1>Suma de los 100 primeros</h1>
-    <!-- Escribe un programa que diga si un número introducido por teclado es o no primo. 
-    Un número primo es aquel que sólo es divisible entre él mismo y la unidad. -->
+    <h1>Suma de los 100 siguientes números</h1>
+    <!-- Realiza un programa que sume los 100 números siguientes a un número entero y positivo 
+    introducido por teclado. Se debe comprobar que el dato introducido es correcto (que es un 
+    número positivo). -->
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
         <p>
             <label for="numero">Numero: </label>
@@ -22,9 +23,13 @@
     </form>
     <p>
         <?php
-        if (isset($_POST['numero']) && $_POST['numero'] > 0) {
+        if (isset($_POST['numero']) && $_POST['numero'] >= 0) {
             $numero = $_POST['numero'];
-            
+            $sum = 0;
+            for($i = $numero + 1; $i < $numero + 101; $i++){
+                $sum += $i;
+            }
+            echo "La suma de los 100 números siguientes es: $sum";
         }
         ?>
 
