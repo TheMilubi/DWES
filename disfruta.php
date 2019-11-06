@@ -62,9 +62,10 @@
         }
     }
     ?>
-    <p>
+    <button onclick="location.reload()">¡¡¡ DisFruta otra vez !!!</button>
+    <!-- <p>
         <a href="<?php echo $_SERVER['PHP_SELF'] ?>">&lt;&lt; Volver</a>
-    </p>
+    </p> -->
 </body>
 
 </html>
