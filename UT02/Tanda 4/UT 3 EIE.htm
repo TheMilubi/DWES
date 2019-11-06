@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>UT 3 EIE</title>
+    <link rel="shortcut icon" href="https://av.iesromerovargas.com/theme/image.php/fordson/theme/1572518994/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, UT 3 EIE" />
+<link rel="stylesheet" type="text/css" href="https://av.iesromerovargas.com/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://av.iesromerovargas.com/theme/styles.php/fordson/1572518994_1/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/av.iesromerovargas.com","sesskey":"Hl8vwZ0rXm","themerev":"1572518994","slasharguments":1,"theme":"fordson","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1571147433","admin":"admin","svgicons":true,"usertimezone":"Europe\/Brussels","contextid":39363};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/av.iesromerovargas.com\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/av.iesromerovargas.com\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/av.iesromerovargas.com\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/av.iesromerovargas.com\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/av.iesromerovargas.com\/theme\/yui_combo.php?m\/1571147433\/","combine":true,"comboBase":"https:\/\/av.iesromerovargas.com\/theme\/yui_combo.php?","ext":false,"root":"m\/1571147433\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_hr-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/av.iesromerovargas.com\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/av.iesromerovargas.com\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1571147433\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"Este sitio web utiliza cookies propias y de terceros para optimizar su navegación.","dismiss":"Aceptar","learnMore":"More info","link":null,"theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+<meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-mod-quiz-review" class="format-topics  path-mod path-mod-quiz safari dir-ltr lang-en yui-skin-sam yui3-skin-sam av-iesromerovargas-com pagelayout-incourse course-88 context-39363 cmid-19756 category-22 drawer-open-left">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="https://av.iesromerovargas.com/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://av.iesromerovargas.com/theme/jquery.php/core/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar  navbar-student navbar-expand moodle-has-zindex">
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  aria-label=""></i><span class="sr-only">Side panel</span></button>
+            </div>
+            <a href="https://av.iesromerovargas.com" class="navbar-brand 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">Aula IES Romero Vargas</span>
+            </a>
+            
+            <!-- course_controls -->
+            <div class="coursecontrols nav-item d-flex">
+                <div class="studentdash nav-item nav-link">
+        <a role="button" data-tooltip="tooltip" data-placement= "bottom" title="Course Dashboard" data-toggle="modal" href="#studentdashslider" class="btn btn-secondary fhs-tooltip"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+    </div>
+                
+            </div>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                
+                <li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5dbf02c29a65b5dbf02c283b6c6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        Enlaces Rápidos
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-5dbf02c29a65b5dbf02c283b6c6">
+                <a class="dropdown-item" href="http://av.iesromerovargas.com/mod/forum/view.php?id=2" title=" Novedades"> Novedades</a>
+                <a class="dropdown-item" href="http://av.iesromerovargas.com/calendar/view.php" title=" Eventos"> Eventos</a>
+                <a class="dropdown-item" href="http://www.iesromerovargas.com" title=" Web Romero Vargas"> Web Romero Vargas</a>
+                <a class="dropdown-item" href="http://fcteu-iesromerovargas.blogspot.com.es/" title=" Blog Erasmus+"> Blog Erasmus+</a>
+    </div>
+</li><li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5dbf02c29a7d15dbf02c283b6c7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        English ‎(en)‎
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-5dbf02c29a7d15dbf02c283b6c7">
+                <a class="dropdown-item" href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a>
+                <a class="dropdown-item" href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;lang=fr" title="Français ‎(fr)‎">Français ‎(fr)‎</a>
+    </div>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <div class="d-none d-lg-block">
+                
+            </div>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="6686"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5dbf02c29b6495dbf02c283b6c8"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-5dbf02c29b6495dbf02c283b6c8"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " aria-hidden="true" title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://av.iesromerovargas.com/message/notificationpreferences.php?userid=6686"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " aria-hidden="true" title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://av.iesromerovargas.com/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-2" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-2-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" class=" dropdown-toggle" id="dropdown-2" title="" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Diaz Duran, Ruben Fermin</span><span class="avatars"><span class="avatar current"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/u/f2" alt="Picture of Diaz Duran, Ruben Fermin" title="Picture of Diaz Duran, Ruben Fermin" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-2-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-2" role="menu" data-align="tr-br">
+                                        <a href="https://av.iesromerovargas.com/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Dashboard" aria-label="Dashboard"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="https://av.iesromerovargas.com/user/profile.php?id=6686" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profile" aria-label="Profile"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://av.iesromerovargas.com/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true" title="Grades" aria-label="Grades"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://av.iesromerovargas.com/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Messages" aria-label="Messages"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://av.iesromerovargas.com/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Preferences" aria-label="Preferences"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="https://av.iesromerovargas.com/login/logout.php?sesskey=Hl8vwZ0rXm" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Log out" aria-label="Log out"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+
+    <div id="page" class="container-fluid">
+
+        <div id="learningcontent">
+        
+            <div class="modal fade" id="studentdashslider" tabindex="-1" role="dialog" aria-labelledby="teacherdashslider" aria-hidden="true">
+<div class="modal-dialog" role="document">
+
+    <div class="modal-content">
+    <div class="modal-body">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        <div class="studentdashboard">
+        <div class="container-fluid">
+        
+            <div class="row">
+
+
+
+                     
+                    <div class="col-md-2 studentadministration">
+                        <p>Course administration</p><a href="https://av.iesromerovargas.com/course/admin.php?courseid=88" alt="Course administration"><i class="fa fa-5x fa-cog"></i></a>
+                    </div>
+                     
+                </div>
+
+            <div class="row">
+                    <div class="col-md-4 coursesummary">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-map">&nbsp</i>Course Description</h3>
+                        </div>
+                            <div class="card-block">
+                                    
+                            </div>
+                    </div>
+
+                    <div class="col-md-5 coursestafflisting">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-users">&nbsp</i>Course Teachers</h3>
+                        </div>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="staffmember">
+                                        <a href="https://av.iesromerovargas.com/user/view.php?id=2654&amp;course=88"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/u/f1" alt="Picture of Puerto Crespo, Manuel" title="Picture of Puerto Crespo, Manuel" class="userpicture defaultuserpic" width="50" height="50" /></a>
+                                        <div class="staffinfo">
+                                            <h4>Manuel Puerto Crespo </h4>
+                                            <p><a href="mailto:mpuertocrespo@gmail.com"><i class="fa fa-envelope-o">&nbsp</i>Email address</a> <br /> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="staffmember">
+                                        <a href="https://av.iesromerovargas.com/user/view.php?id=5133&amp;course=88"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/u/f1" alt="Picture of Velayos Garcia, Miguel Angel" title="Picture of Velayos Garcia, Miguel Angel" class="userpicture defaultuserpic" width="50" height="50" /></a>
+                                        <div class="staffinfo">
+                                            <h4>Miguel Angel Velayos Garcia </h4>
+                                            <p><a href="mailto:mavelayos@hotmail.com"><i class="fa fa-envelope-o">&nbsp</i>Email address</a> <br /> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 activitylinks">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-check-square-o dashicon"></i>Activities</h3>     
+                        </div>
+                        <div class="list-group">
+                            <div class="list-group" aria-labelledby="list-group-5dbf02c2a078b5dbf02c283b6c17">
+        <a href="https://av.iesromerovargas.com/mod/assign/index.php?id=88"class="list-group-item" >Assignments</a>
+        <a href="https://av.iesromerovargas.com/mod/forum/index.php?id=88"class="list-group-item" >Forums</a>
+        <a href="https://av.iesromerovargas.com/mod/quiz/index.php?id=88"class="list-group-item" >Quizzes</a>
+        <a href="https://av.iesromerovargas.com/course/resources.php?id=88"class="list-group-item" >Resources</a>
+ </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+</div>
+
+<div style="clear:both;"></div>
+            <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card">
+                <div class="headerbkg"><div class="default" style="background-image: url(&quot;https://av.iesromerovargas.com/theme/image.php/fordson/theme/1572518994/headerbg&quot;); background-size: cover; background-position:center;
+                width: 100%; height: 100%;"></div></div>
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="mr-auto">
+                    <a href="https://av.iesromerovargas.com/course/view.php?id=88"><div class="page-context-header"><div class="page-header-headings"><h1>Empresa e Iniciativa Emprendedora - 2º DAW</h1></div></div></a>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav role="navigation">
+    <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://av.iesromerovargas.com/my/" >Dashboard</a></li>
+                <li class="breadcrumb-item">My courses</li>
+                <li class="breadcrumb-item"><a href="https://av.iesromerovargas.com/course/view.php?id=88" title="Empresa e Iniciativa Emprendedora - 2º DAW">2DAW-EIE</a></li>
+                <li class="breadcrumb-item">TEMA 3. Administración</li>
+                <li class="breadcrumb-item"><a href="https://av.iesromerovargas.com/mod/quiz/view.php?id=19756" title="Quiz">UT 3 EIE</a></li>
+    </ul>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            
+            <div id="page-content" class="row">
+                <div id="region-main-box" class="col-12">
+                    <section id="region-main" class="has-blocks mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="notifications" id="user-notifications"></span>
+                                <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Sunday, 3 November 2019, 5:25 PM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Sunday, 3 November 2019, 5:39 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">14 mins 14 secs</td></tr><tr><th class="cell" scope="row">Marks</th><td class="cell">24.00/25.00</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell"><b>9.60</b> out of 10.00 (<b>96</b>%)</td></tr></tbody></table><form action="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756" method="post" class="questionflagsaveform"><div><div id="q1" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Incorrect</div><div class="grade">Mark 0.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:1_:flagged" value="0" /><input type="checkbox" id="q6928:1_:flaggedcheckbox" name="q6928:1_:flagged" value="1" /><input type="hidden" value="qaid=106131&amp;qubaid=6928&amp;qid=9426&amp;slot=1&amp;checksum=9ff4c4fa4f66c905131eeb1d7f9b92a3&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:1_:flaggedlabel" for="q6928:1_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:1_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:1_:sequencecheck" value="3" /><div class="qtext"><p></p><p><span lang="ES-TRAD">¿Cuál
+de las siguientes etapas pertenecen al proceso administrativo?</span></p><br><p></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 incorrect"><input type="radio" name="q6928:1_answer" disabled="disabled" value="0" id="q6928:1_answer0" checked="checked" /><label for="q6928:1_answer0" class="m-l-1"><span class="answernumber">a. </span><br /><span lang="ES-TRAD">Planificación, Organización y Dirección.<br></span></label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Incorrect" aria-label="Incorrect"></i></div>
+<div class="r1"><input type="radio" name="q6928:1_answer" disabled="disabled" value="1" id="q6928:1_answer1" /><label for="q6928:1_answer1" class="m-l-1"><span class="answernumber">b. </span><br /><span style="font-size: 0.9375rem;">Planificación, Organización y Marketing<br></span></label> </div>
+<div class="r0"><input type="radio" name="q6928:1_answer" disabled="disabled" value="2" id="q6928:1_answer2" /><label for="q6928:1_answer2" class="m-l-1"><span class="answernumber">c. </span><br /><span style="font-size: 0.9375rem;">Planificación, Dirección y Marketing.<br></span></label> </div>
+<div class="r1"><input type="radio" name="q6928:1_answer" disabled="disabled" value="3" id="q6928:1_answer3" /><label for="q6928:1_answer3" class="m-l-1"><span class="answernumber">d. </span><br />Dirección, Organización y Marketing.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta incorrecta.</div><div class="rightanswer">The correct answer is: <br />Dirección, Organización y Marketing.</div></div></div></div></div><div id="q2" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:2_:flagged" value="0" /><input type="checkbox" id="q6928:2_:flaggedcheckbox" name="q6928:2_:flagged" value="1" /><input type="hidden" value="qaid=106132&amp;qubaid=6928&amp;qid=9286&amp;slot=2&amp;checksum=1f29204b967630c148a12deb6a6168e3&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:2_:flaggedlabel" for="q6928:2_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:2_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:2_:sequencecheck" value="3" /><div class="qtext"><p></p><p lang="es-ES" align="justify">
+Es
+indispensable comprobar el grado de consecución de los objetivos y
+obtener información para mejorar las estrategias y decisiones. ¿A
+qué corresponde esta definición?</p><br><p></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:2_answer" disabled="disabled" value="0" id="q6928:2_answer0" /><label for="q6928:2_answer0" class="m-l-1"><span class="answernumber">a. </span>Organización.</label> </div>
+<div class="r1"><input type="radio" name="q6928:2_answer" disabled="disabled" value="1" id="q6928:2_answer1" /><label for="q6928:2_answer1" class="m-l-1"><span class="answernumber">b. </span>Dirección</label> </div>
+<div class="r0 correct"><input type="radio" name="q6928:2_answer" disabled="disabled" value="2" id="q6928:2_answer2" checked="checked" /><label for="q6928:2_answer2" class="m-l-1"><span class="answernumber">c. </span>Control</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:2_answer" disabled="disabled" value="3" id="q6928:2_answer3" /><label for="q6928:2_answer3" class="m-l-1"><span class="answernumber">d. </span>Planificación</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Control</div></div></div></div></div><div id="q3" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:3_:flagged" value="0" /><input type="checkbox" id="q6928:3_:flaggedcheckbox" name="q6928:3_:flagged" value="1" /><input type="hidden" value="qaid=106133&amp;qubaid=6928&amp;qid=9287&amp;slot=3&amp;checksum=e9fec4082952846e772f7f5096df9eda&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:3_:flaggedlabel" for="q6928:3_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:3_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:3_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Es
+la fase estratégica, se debe pensar y estudiar que se quiere hacer y
+decidir que se va a hacer?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:3_answer" disabled="disabled" value="0" id="q6928:3_answer0" /><label for="q6928:3_answer0" class="m-l-1"><span class="answernumber">a. </span>Organización.</label> </div>
+<div class="r1"><input type="radio" name="q6928:3_answer" disabled="disabled" value="1" id="q6928:3_answer1" /><label for="q6928:3_answer1" class="m-l-1"><span class="answernumber">b. </span>Dirección.</label> </div>
+<div class="r0"><input type="radio" name="q6928:3_answer" disabled="disabled" value="2" id="q6928:3_answer2" /><label for="q6928:3_answer2" class="m-l-1"><span class="answernumber">c. </span>Control.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:3_answer" disabled="disabled" value="3" id="q6928:3_answer3" checked="checked" /><label for="q6928:3_answer3" class="m-l-1"><span class="answernumber">d. </span>Planificación.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Planificación.</div></div></div></div></div><div id="q4" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:4_:flagged" value="0" /><input type="checkbox" id="q6928:4_:flaggedcheckbox" name="q6928:4_:flagged" value="1" /><input type="hidden" value="qaid=106134&amp;qubaid=6928&amp;qid=9212&amp;slot=4&amp;checksum=7abb73ff9e73ecf5164b858dba47239b&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:4_:flaggedlabel" for="q6928:4_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:4_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:4_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+Es
+el diseño de estructuras, procesos, funciones y responsabilidades
+con el fin de lograr los objetivos empresariales. ¿A qué
+corresponde esta definición?<br></p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:4_answer" disabled="disabled" value="0" id="q6928:4_answer0" /><label for="q6928:4_answer0" class="m-l-1"><span class="answernumber">a. </span>Dirección</label> </div>
+<div class="r1"><input type="radio" name="q6928:4_answer" disabled="disabled" value="1" id="q6928:4_answer1" /><label for="q6928:4_answer1" class="m-l-1"><span class="answernumber">b. </span>Control</label> </div>
+<div class="r0"><input type="radio" name="q6928:4_answer" disabled="disabled" value="2" id="q6928:4_answer2" /><label for="q6928:4_answer2" class="m-l-1"><span class="answernumber">c. </span>Planificación</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:4_answer" disabled="disabled" value="3" id="q6928:4_answer3" checked="checked" /><label for="q6928:4_answer3" class="m-l-1"><span class="answernumber">d. </span>Organización</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Organización</div></div></div></div></div><div id="q5" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:5_:flagged" value="0" /><input type="checkbox" id="q6928:5_:flaggedcheckbox" name="q6928:5_:flagged" value="1" /><input type="hidden" value="qaid=106135&amp;qubaid=6928&amp;qid=9213&amp;slot=5&amp;checksum=3ed895244459ca2aa2092d9a5a38b637&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:5_:flaggedlabel" for="q6928:5_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:5_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:5_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Una
+vez que la empresa define a dónde quiere ir y cómo va a hacerlo,
+debe liderar ese camino motivando a los trabajadores y haciéndoles
+partícipes de la misión y objetivos.</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:5_answer" disabled="disabled" value="0" id="q6928:5_answer0" checked="checked" /><label for="q6928:5_answer0" class="m-l-1"><span class="answernumber">a. </span>Dirección</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:5_answer" disabled="disabled" value="1" id="q6928:5_answer1" /><label for="q6928:5_answer1" class="m-l-1"><span class="answernumber">b. </span>Control</label> </div>
+<div class="r0"><input type="radio" name="q6928:5_answer" disabled="disabled" value="2" id="q6928:5_answer2" /><label for="q6928:5_answer2" class="m-l-1"><span class="answernumber">c. </span>Organización</label> </div>
+<div class="r1"><input type="radio" name="q6928:5_answer" disabled="disabled" value="3" id="q6928:5_answer3" /><label for="q6928:5_answer3" class="m-l-1"><span class="answernumber">d. </span>Planificación</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Dirección</div></div></div></div></div><div id="q6" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:6_:flagged" value="0" /><input type="checkbox" id="q6928:6_:flaggedcheckbox" name="q6928:6_:flagged" value="1" /><input type="hidden" value="qaid=106136&amp;qubaid=6928&amp;qid=9288&amp;slot=6&amp;checksum=6d44cd2c6191ddbc572f95eeff70859d&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:6_:flaggedlabel" for="q6928:6_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:6_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:6_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Cómo
+es el entorno al cual se enfrenta una empresa?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:6_answer" disabled="disabled" value="0" id="q6928:6_answer0" checked="checked" /><label for="q6928:6_answer0" class="m-l-1"><span class="answernumber">a. </span>Cambia
+con rapidez.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:6_answer" disabled="disabled" value="1" id="q6928:6_answer1" /><label for="q6928:6_answer1" class="m-l-1"><span class="answernumber">b. </span>Siempre está estancado.</label> </div>
+<div class="r0"><input type="radio" name="q6928:6_answer" disabled="disabled" value="2" id="q6928:6_answer2" /><label for="q6928:6_answer2" class="m-l-1"><span class="answernumber">c. </span>Cambia lentamente.</label> </div>
+<div class="r1"><input type="radio" name="q6928:6_answer" disabled="disabled" value="3" id="q6928:6_answer3" /><label for="q6928:6_answer3" class="m-l-1"><span class="answernumber">d. </span>Cambia muy lentamente.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Cambia
+con rapidez.</div></div></div></div></div><div id="q7" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:7_:flagged" value="0" /><input type="checkbox" id="q6928:7_:flaggedcheckbox" name="q6928:7_:flagged" value="1" /><input type="hidden" value="qaid=106137&amp;qubaid=6928&amp;qid=9289&amp;slot=7&amp;checksum=95769e9af6417ee73b89bd4e8ea110d4&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:7_:flaggedlabel" for="q6928:7_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:7_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:7_:sequencecheck" value="3" /><div class="qtext"><p></p><p lang="es-ES" align="justify">
+¿Cuáles
+son las tres grandes fases de la planificación?</p><br><p></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:7_answer" disabled="disabled" value="0" id="q6928:7_answer0" checked="checked" /><label for="q6928:7_answer0" class="m-l-1"><span class="answernumber">a. </span>Análisis, formulación e implantación de estrategias.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:7_answer" disabled="disabled" value="1" id="q6928:7_answer1" /><label for="q6928:7_answer1" class="m-l-1"><span class="answernumber">b. </span>Análisis, marketing e implantación de estrategias.</label> </div>
+<div class="r0"><input type="radio" name="q6928:7_answer" disabled="disabled" value="2" id="q6928:7_answer2" /><label for="q6928:7_answer2" class="m-l-1"><span class="answernumber">c. </span>Análisis, formulación y marketing.</label> </div>
+<div class="r1"><input type="radio" name="q6928:7_answer" disabled="disabled" value="3" id="q6928:7_answer3" /><label for="q6928:7_answer3" class="m-l-1"><span class="answernumber">d. </span>Análisis y formulación de estrategias.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Análisis, formulación e implantación de estrategias.</div></div></div></div></div><div id="q8" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:8_:flagged" value="0" /><input type="checkbox" id="q6928:8_:flaggedcheckbox" name="q6928:8_:flagged" value="1" /><input type="hidden" value="qaid=106138&amp;qubaid=6928&amp;qid=9290&amp;slot=8&amp;checksum=572471b7727d03761cad1b369acc84f5&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:8_:flaggedlabel" for="q6928:8_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:8_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:8_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Qué
+hay que hacer justo antes de la implantación de estrategias?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:8_answer" disabled="disabled" value="0" id="q6928:8_answer0" /><label for="q6928:8_answer0" class="m-l-1"><span class="answernumber">a. </span>Análisis estratégico</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:8_answer" disabled="disabled" value="1" id="q6928:8_answer1" checked="checked" /><label for="q6928:8_answer1" class="m-l-1"><span class="answernumber">b. </span>Formulación
+de estrategias.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q6928:8_answer" disabled="disabled" value="2" id="q6928:8_answer2" /><label for="q6928:8_answer2" class="m-l-1"><span class="answernumber">c. </span>&nbsp;Diseño de opciones estratégicas.</label> </div>
+<div class="r1"><input type="radio" name="q6928:8_answer" disabled="disabled" value="3" id="q6928:8_answer3" /><label for="q6928:8_answer3" class="m-l-1"><span class="answernumber">d. </span>Implantación de tácticas.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Formulación
+de estrategias.</div></div></div></div></div><div id="q9" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">9</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:9_:flagged" value="0" /><input type="checkbox" id="q6928:9_:flaggedcheckbox" name="q6928:9_:flagged" value="1" /><input type="hidden" value="qaid=106139&amp;qubaid=6928&amp;qid=9291&amp;slot=9&amp;checksum=f63f55e787e00f57125599acb9be0498&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:9_:flaggedlabel" for="q6928:9_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:9_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:9_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Qué
+se hace justo después del diseño de opciones estratégicas?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:9_answer" disabled="disabled" value="0" id="q6928:9_answer0" checked="checked" /><label for="q6928:9_answer0" class="m-l-1"><span class="answernumber">a. </span>Evaluación
+y selección de estrategias.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:9_answer" disabled="disabled" value="1" id="q6928:9_answer1" /><label for="q6928:9_answer1" class="m-l-1"><span class="answernumber">b. </span>Puesta en práctica.</label> </div>
+<div class="r0"><input type="radio" name="q6928:9_answer" disabled="disabled" value="2" id="q6928:9_answer2" /><label for="q6928:9_answer2" class="m-l-1"><span class="answernumber">c. </span>Control.</label> </div>
+<div class="r1"><input type="radio" name="q6928:9_answer" disabled="disabled" value="3" id="q6928:9_answer3" /><label for="q6928:9_answer3" class="m-l-1"><span class="answernumber">d. </span>Diseñar.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Evaluación
+y selección de estrategias.</div></div></div></div></div><div id="q10" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">10</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:10_:flagged" value="0" /><input type="checkbox" id="q6928:10_:flaggedcheckbox" name="q6928:10_:flagged" value="1" /><input type="hidden" value="qaid=106140&amp;qubaid=6928&amp;qid=9292&amp;slot=10&amp;checksum=a957d924aa5b2e724f415a8576aaa0a8&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:10_:flaggedlabel" for="q6928:10_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:10_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:10_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Delimitar
+el campo de acción de los trabajadores aumentando su eficacia y
+destreza, corresponde a?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:10_answer" disabled="disabled" value="0" id="q6928:10_answer0" checked="checked" /><label for="q6928:10_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:10_answer" disabled="disabled" value="1" id="q6928:10_answer1" /><label for="q6928:10_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> </div>
+<div class="r0"><input type="radio" name="q6928:10_answer" disabled="disabled" value="2" id="q6928:10_answer2" /><label for="q6928:10_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1"><input type="radio" name="q6928:10_answer" disabled="disabled" value="3" id="q6928:10_answer3" /><label for="q6928:10_answer3" class="m-l-1"><span class="answernumber">d. </span>Formación.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Especialización.</div></div></div></div></div><div id="q11" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">11</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:11_:flagged" value="0" /><input type="checkbox" id="q6928:11_:flaggedcheckbox" name="q6928:11_:flagged" value="1" /><input type="hidden" value="qaid=106141&amp;qubaid=6928&amp;qid=9293&amp;slot=11&amp;checksum=3a7c6c331c82bcceeb8d35de7c53cdb4&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:11_:flaggedlabel" for="q6928:11_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:11_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:11_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Todas
+las actividades establecidas deben relacionarse con los objetivos, la
+misión y visión de la empresa?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:11_answer" disabled="disabled" value="0" id="q6928:11_answer0" /><label for="q6928:11_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1"><input type="radio" name="q6928:11_answer" disabled="disabled" value="1" id="q6928:11_answer1" /><label for="q6928:11_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> </div>
+<div class="r0"><input type="radio" name="q6928:11_answer" disabled="disabled" value="2" id="q6928:11_answer2" /><label for="q6928:11_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:11_answer" disabled="disabled" value="3" id="q6928:11_answer3" checked="checked" /><label for="q6928:11_answer3" class="m-l-1"><span class="answernumber">d. </span>Unidad organizacional.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Unidad organizacional.</div></div></div></div></div><div id="q12" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">12</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:12_:flagged" value="0" /><input type="checkbox" id="q6928:12_:flaggedcheckbox" name="q6928:12_:flagged" value="1" /><input type="hidden" value="qaid=106142&amp;qubaid=6928&amp;qid=9294&amp;slot=12&amp;checksum=83a4bef9393500d12077fcc049fb4989&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:12_:flaggedlabel" for="q6928:12_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:12_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:12_:sequencecheck" value="3" /><div class="qtext"><p></p><p lang="es-ES" align="justify">
+¿Es
+necesario definir claramente los distintos niveles de autoridad y
+responsabilidad, corresponde a?</p><br><p></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:12_answer" disabled="disabled" value="0" id="q6928:12_answer0" /><label for="q6928:12_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:12_answer" disabled="disabled" value="1" id="q6928:12_answer1" checked="checked" /><label for="q6928:12_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q6928:12_answer" disabled="disabled" value="2" id="q6928:12_answer2" /><label for="q6928:12_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1"><input type="radio" name="q6928:12_answer" disabled="disabled" value="3" id="q6928:12_answer3" /><label for="q6928:12_answer3" class="m-l-1"><span class="answernumber">d. </span>Unidad de especialización.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Jerarquía</div></div></div></div></div><div id="q13" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">13</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:13_:flagged" value="0" /><input type="checkbox" id="q6928:13_:flaggedcheckbox" name="q6928:13_:flagged" value="1" /><input type="hidden" value="qaid=106143&amp;qubaid=6928&amp;qid=9295&amp;slot=13&amp;checksum=559a00f70351c606f45ffe00b77d7905&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:13_:flaggedlabel" for="q6928:13_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:13_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:13_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Para
+exigir responsabilidad, previamente hay que asignar la autoridad
+necesaria para cumplir las tareas?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:13_answer" disabled="disabled" value="0" id="q6928:13_answer0" /><label for="q6928:13_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1"><input type="radio" name="q6928:13_answer" disabled="disabled" value="1" id="q6928:13_answer1" /><label for="q6928:13_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> </div>
+<div class="r0"><input type="radio" name="q6928:13_answer" disabled="disabled" value="2" id="q6928:13_answer2" /><label for="q6928:13_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:13_answer" disabled="disabled" value="3" id="q6928:13_answer3" checked="checked" /><label for="q6928:13_answer3" class="m-l-1"><span class="answernumber">d. </span>Paridad autoridad y responsabilidad.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Paridad autoridad y responsabilidad.</div></div></div></div></div><div id="q14" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">14</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:14_:flagged" value="0" /><input type="checkbox" id="q6928:14_:flaggedcheckbox" name="q6928:14_:flagged" value="1" /><input type="hidden" value="qaid=106144&amp;qubaid=6928&amp;qid=9296&amp;slot=14&amp;checksum=55c226c6f0318ce07e56d30b217728d0&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:14_:flaggedlabel" for="q6928:14_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:14_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:14_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Para
+evitar confusión, cada función debe asignarse a un solo jefe?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:14_answer" disabled="disabled" value="0" id="q6928:14_answer0" /><label for="q6928:14_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1"><input type="radio" name="q6928:14_answer" disabled="disabled" value="1" id="q6928:14_answer1" /><label for="q6928:14_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> </div>
+<div class="r0 correct"><input type="radio" name="q6928:14_answer" disabled="disabled" value="2" id="q6928:14_answer2" checked="checked" /><label for="q6928:14_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:14_answer" disabled="disabled" value="3" id="q6928:14_answer3" /><label for="q6928:14_answer3" class="m-l-1"><span class="answernumber">d. </span>Paridad autoridad y responsabilidad.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Unidad de mando.</div></div></div></div></div><div id="q15" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">15</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:15_:flagged" value="0" /><input type="checkbox" id="q6928:15_:flaggedcheckbox" name="q6928:15_:flagged" value="1" /><input type="hidden" value="qaid=106145&amp;qubaid=6928&amp;qid=9297&amp;slot=15&amp;checksum=78cad928b8fb47c71516b20b94454c12&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:15_:flaggedlabel" for="q6928:15_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:15_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:15_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Se
+debe mantener informado a los miembros de la empresa de los cambios
+en estructuras, procesos, sistemas y técnicas? 
+</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:15_answer" disabled="disabled" value="0" id="q6928:15_answer0" /><label for="q6928:15_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:15_answer" disabled="disabled" value="1" id="q6928:15_answer1" checked="checked" /><label for="q6928:15_answer1" class="m-l-1"><span class="answernumber">b. </span>Difusión.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q6928:15_answer" disabled="disabled" value="2" id="q6928:15_answer2" /><label for="q6928:15_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1"><input type="radio" name="q6928:15_answer" disabled="disabled" value="3" id="q6928:15_answer3" /><label for="q6928:15_answer3" class="m-l-1"><span class="answernumber">d. </span>Paridad autoridad y responsabilidad.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Difusión.</div></div></div></div></div><div id="q16" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">16</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:16_:flagged" value="0" /><input type="checkbox" id="q6928:16_:flaggedcheckbox" name="q6928:16_:flagged" value="1" /><input type="hidden" value="qaid=106146&amp;qubaid=6928&amp;qid=9298&amp;slot=16&amp;checksum=cc2420f025c0e76d28e0e6712bab3567&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:16_:flaggedlabel" for="q6928:16_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:16_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:16_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+Para
+ser eficientes, un jefe no debe de tener bajo su autoridad a más de
+cinco o seis subordinados.</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:16_answer" disabled="disabled" value="0" id="q6928:16_answer0" /><label for="q6928:16_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1"><input type="radio" name="q6928:16_answer" disabled="disabled" value="1" id="q6928:16_answer1" /><label for="q6928:16_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> </div>
+<div class="r0 correct"><input type="radio" name="q6928:16_answer" disabled="disabled" value="2" id="q6928:16_answer2" checked="checked" /><label for="q6928:16_answer2" class="m-l-1"><span class="answernumber">c. </span>Tramo de control.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:16_answer" disabled="disabled" value="3" id="q6928:16_answer3" /><label for="q6928:16_answer3" class="m-l-1"><span class="answernumber">d. </span>Paridad autoridad y responsabilidad.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Tramo de control.</div></div></div></div></div><div id="q17" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">17</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:17_:flagged" value="0" /><input type="checkbox" id="q6928:17_:flaggedcheckbox" name="q6928:17_:flagged" value="1" /><input type="hidden" value="qaid=106147&amp;qubaid=6928&amp;qid=9299&amp;slot=17&amp;checksum=44b07a6150e2fb52c0aec1e12605d638&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:17_:flaggedlabel" for="q6928:17_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:17_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:17_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+La
+empresa es un sistema, y sus distintos componentes deben funcionar de
+forma sincronizada.</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:17_answer" disabled="disabled" value="0" id="q6928:17_answer0" checked="checked" /><label for="q6928:17_answer0" class="m-l-1"><span class="answernumber">a. </span>Coordinación.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:17_answer" disabled="disabled" value="1" id="q6928:17_answer1" /><label for="q6928:17_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerarquía</label> </div>
+<div class="r0"><input type="radio" name="q6928:17_answer" disabled="disabled" value="2" id="q6928:17_answer2" /><label for="q6928:17_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1"><input type="radio" name="q6928:17_answer" disabled="disabled" value="3" id="q6928:17_answer3" /><label for="q6928:17_answer3" class="m-l-1"><span class="answernumber">d. </span>Paridad autoridad y responsabilidad.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Coordinación.</div></div></div></div></div><div id="q18" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">18</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:18_:flagged" value="0" /><input type="checkbox" id="q6928:18_:flaggedcheckbox" name="q6928:18_:flagged" value="1" /><input type="hidden" value="qaid=106148&amp;qubaid=6928&amp;qid=9300&amp;slot=18&amp;checksum=aa0cbc36f55b7a420b244bba00267df0&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:18_:flaggedlabel" for="q6928:18_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:18_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:18_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+Ante
+un entorno en constante cambio, la organización debe ser capaz de
+adaptarse de forma continua.</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:18_answer" disabled="disabled" value="0" id="q6928:18_answer0" /><label for="q6928:18_answer0" class="m-l-1"><span class="answernumber">a. </span>Especialización.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:18_answer" disabled="disabled" value="1" id="q6928:18_answer1" checked="checked" /><label for="q6928:18_answer1" class="m-l-1"><span class="answernumber">b. </span>Mejora continua.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q6928:18_answer" disabled="disabled" value="2" id="q6928:18_answer2" /><label for="q6928:18_answer2" class="m-l-1"><span class="answernumber">c. </span>Unidad de mando.</label> </div>
+<div class="r1"><input type="radio" name="q6928:18_answer" disabled="disabled" value="3" id="q6928:18_answer3" /><label for="q6928:18_answer3" class="m-l-1"><span class="answernumber">d. </span>Paridad autoridad y responsabilidad.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Mejora continua.</div></div></div></div></div><div id="q19" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">19</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:19_:flagged" value="0" /><input type="checkbox" id="q6928:19_:flaggedcheckbox" name="q6928:19_:flagged" value="1" /><input type="hidden" value="qaid=106149&amp;qubaid=6928&amp;qid=9301&amp;slot=19&amp;checksum=87619a922dabfd278f8bc86964fd33f3&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:19_:flaggedlabel" for="q6928:19_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:19_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:19_:sequencecheck" value="3" /><div class="qtext"><p></p><p lang="es-ES" align="justify">
+¿Dentro
+de las estructuras organizativas clásicas, la autoridad se concentra
+en una sola persona y se trasmite por una líneas de mando
+corresponde a?</p><br><p></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:19_answer" disabled="disabled" value="0" id="q6928:19_answer0" /><label for="q6928:19_answer0" class="m-l-1"><span class="answernumber">a. </span>Lineal y funcional.</label> </div>
+<div class="r1"><input type="radio" name="q6928:19_answer" disabled="disabled" value="1" id="q6928:19_answer1" /><label for="q6928:19_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerárquica y funcional.</label> </div>
+<div class="r0 correct"><input type="radio" name="q6928:19_answer" disabled="disabled" value="2" id="q6928:19_answer2" checked="checked" /><label for="q6928:19_answer2" class="m-l-1"><span class="answernumber">c. </span>Jerárquica y lineal.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:19_answer" disabled="disabled" value="3" id="q6928:19_answer3" /><label for="q6928:19_answer3" class="m-l-1"><span class="answernumber">d. </span>Funcional, Lineal y Jerárquica.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Jerárquica y lineal.</div></div></div></div></div><div id="q20" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">20</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:20_:flagged" value="0" /><input type="checkbox" id="q6928:20_:flaggedcheckbox" name="q6928:20_:flagged" value="1" /><input type="hidden" value="qaid=106150&amp;qubaid=6928&amp;qid=9302&amp;slot=20&amp;checksum=313eefafa55b31169b265a118c0c4db0&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:20_:flaggedlabel" for="q6928:20_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:20_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:20_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Se
+agrupan las tareas por la función básica que representan. Los
+subordinados pueden tener varios jefes, por lo que se requiere
+elevada coordinación?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:20_answer" disabled="disabled" value="0" id="q6928:20_answer0" /><label for="q6928:20_answer0" class="m-l-1"><span class="answernumber">a. </span>Lineal</label> </div>
+<div class="r1"><input type="radio" name="q6928:20_answer" disabled="disabled" value="1" id="q6928:20_answer1" /><label for="q6928:20_answer1" class="m-l-1"><span class="answernumber">b. </span>Jerárquico.</label> </div>
+<div class="r0 correct"><input type="radio" name="q6928:20_answer" disabled="disabled" value="2" id="q6928:20_answer2" checked="checked" /><label for="q6928:20_answer2" class="m-l-1"><span class="answernumber">c. </span>Funcional.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:20_answer" disabled="disabled" value="3" id="q6928:20_answer3" /><label for="q6928:20_answer3" class="m-l-1"><span class="answernumber">d. </span>Lineal y jerárquica.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Funcional.</div></div></div></div></div><div id="q21" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">21</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:21_:flagged" value="0" /><input type="checkbox" id="q6928:21_:flaggedcheckbox" name="q6928:21_:flagged" value="1" /><input type="hidden" value="qaid=106151&amp;qubaid=6928&amp;qid=9303&amp;slot=21&amp;checksum=62f8d8f651c41c529c68e531208e3848&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:21_:flaggedlabel" for="q6928:21_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:21_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:21_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿No
+pertenecen a ninguna línea de autoridad, son departamentos de
+consultas a especialistas, corresponde a?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:21_answer" disabled="disabled" value="0" id="q6928:21_answer0" /><label for="q6928:21_answer0" class="m-l-1"><span class="answernumber">a. </span>Comités</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:21_answer" disabled="disabled" value="1" id="q6928:21_answer1" checked="checked" /><label for="q6928:21_answer1" class="m-l-1"><span class="answernumber">b. </span>Staff</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q6928:21_answer" disabled="disabled" value="2" id="q6928:21_answer2" /><label for="q6928:21_answer2" class="m-l-1"><span class="answernumber">c. </span>Multidivisional</label> </div>
+<div class="r1"><input type="radio" name="q6928:21_answer" disabled="disabled" value="3" id="q6928:21_answer3" /><label for="q6928:21_answer3" class="m-l-1"><span class="answernumber">d. </span>Holding</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Staff</div></div></div></div></div><div id="q22" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">22</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:22_:flagged" value="0" /><input type="checkbox" id="q6928:22_:flaggedcheckbox" name="q6928:22_:flagged" value="1" /><input type="hidden" value="qaid=106152&amp;qubaid=6928&amp;qid=9304&amp;slot=22&amp;checksum=1db0ec460715abb669f606bebcebab7b&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:22_:flaggedlabel" for="q6928:22_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:22_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:22_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+Combina
+la departamentalización por proyectos con la de funciones. Tiene un
+sistema de mando múltiple que requiere una mayor coordinación y
+delimitación de responsabilidades.</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:22_answer" disabled="disabled" value="0" id="q6928:22_answer0" /><label for="q6928:22_answer0" class="m-l-1"><span class="answernumber">a. </span>Staff.</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:22_answer" disabled="disabled" value="1" id="q6928:22_answer1" checked="checked" /><label for="q6928:22_answer1" class="m-l-1"><span class="answernumber">b. </span>Matricial.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="radio" name="q6928:22_answer" disabled="disabled" value="2" id="q6928:22_answer2" /><label for="q6928:22_answer2" class="m-l-1"><span class="answernumber">c. </span>Holding.</label> </div>
+<div class="r1"><input type="radio" name="q6928:22_answer" disabled="disabled" value="3" id="q6928:22_answer3" /><label for="q6928:22_answer3" class="m-l-1"><span class="answernumber">d. </span>Multidivisional.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Matricial.</div></div></div></div></div><div id="q23" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">23</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:23_:flagged" value="0" /><input type="checkbox" id="q6928:23_:flaggedcheckbox" name="q6928:23_:flagged" value="1" /><input type="hidden" value="qaid=106153&amp;qubaid=6928&amp;qid=9305&amp;slot=23&amp;checksum=416f2d4631a4f68e30859b1178e057b4&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:23_:flaggedlabel" for="q6928:23_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:23_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:23_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Establecer
+oficialmente por la dirección, definiendo funciones, jerarquía,
+coordinación y canales de comunicación corresponde a?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:23_answer" disabled="disabled" value="0" id="q6928:23_answer0" /><label for="q6928:23_answer0" class="m-l-1"><span class="answernumber">a. </span>Liderazgo
+formal.</label> </div>
+<div class="r1"><input type="radio" name="q6928:23_answer" disabled="disabled" value="1" id="q6928:23_answer1" /><label for="q6928:23_answer1" class="m-l-1"><span class="answernumber">b. </span>Liderazgo informal.</label> </div>
+<div class="r0 correct"><input type="radio" name="q6928:23_answer" disabled="disabled" value="2" id="q6928:23_answer2" checked="checked" /><label for="q6928:23_answer2" class="m-l-1"><span class="answernumber">c. </span>Organización formal</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:23_answer" disabled="disabled" value="3" id="q6928:23_answer3" /><label for="q6928:23_answer3" class="m-l-1"><span class="answernumber">d. </span>Organización informal.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Organización formal</div></div></div></div></div><div id="q24" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">24</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:24_:flagged" value="0" /><input type="checkbox" id="q6928:24_:flaggedcheckbox" name="q6928:24_:flagged" value="1" /><input type="hidden" value="qaid=106154&amp;qubaid=6928&amp;qid=9306&amp;slot=24&amp;checksum=8929e426d90e1d00efe08c24ecc5c776&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:24_:flaggedlabel" for="q6928:24_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:24_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:24_:sequencecheck" value="4" /><div class="qtext"><p><p lang="es-ES" align="justify">
+¿Centros
+de poder o de relación no oficiales que surgen espontáneamente por
+gustos afinidades o intereses personales?</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q6928:24_answer" disabled="disabled" value="0" id="q6928:24_answer0" /><label for="q6928:24_answer0" class="m-l-1"><span class="answernumber">a. </span>Liderazgo
+formal.</label> </div>
+<div class="r1"><input type="radio" name="q6928:24_answer" disabled="disabled" value="1" id="q6928:24_answer1" /><label for="q6928:24_answer1" class="m-l-1"><span class="answernumber">b. </span>Liderazgo informal.</label> </div>
+<div class="r0"><input type="radio" name="q6928:24_answer" disabled="disabled" value="2" id="q6928:24_answer2" /><label for="q6928:24_answer2" class="m-l-1"><span class="answernumber">c. </span>Organización formal</label> </div>
+<div class="r1 correct"><input type="radio" name="q6928:24_answer" disabled="disabled" value="3" id="q6928:24_answer3" checked="checked" /><label for="q6928:24_answer3" class="m-l-1"><span class="answernumber">d. </span>Organización informal.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Organización informal.</div></div></div></div></div><div id="q25" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">25</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q6928:25_:flagged" value="0" /><input type="checkbox" id="q6928:25_:flaggedcheckbox" name="q6928:25_:flagged" value="1" /><input type="hidden" value="qaid=106155&amp;qubaid=6928&amp;qid=9307&amp;slot=25&amp;checksum=3d7fe59896dd296c7d72f9df87d81a97&amp;sesskey=Hl8vwZ0rXm&amp;newstate=" class="questionflagpostdata" /><label id="q6928:25_:flaggedlabel" for="q6928:25_:flaggedcheckbox"><img src="https://av.iesromerovargas.com/theme/image.php/fordson/core/1572518994/i/unflagged" alt="Not flagged" id="q6928:25_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q6928:25_:sequencecheck" value="3" /><div class="qtext"><p><p lang="es-ES" align="justify">
+Está
+preestablecido por la organización.</p><br></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q6928:25_answer" disabled="disabled" value="0" id="q6928:25_answer0" checked="checked" /><label for="q6928:25_answer0" class="m-l-1"><span class="answernumber">a. </span>Liderazgo
+formal.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="radio" name="q6928:25_answer" disabled="disabled" value="1" id="q6928:25_answer1" /><label for="q6928:25_answer1" class="m-l-1"><span class="answernumber">b. </span>Liderazgo informal.</label> </div>
+<div class="r0"><input type="radio" name="q6928:25_answer" disabled="disabled" value="2" id="q6928:25_answer2" /><label for="q6928:25_answer2" class="m-l-1"><span class="answernumber">c. </span>Organización formal</label> </div>
+<div class="r1"><input type="radio" name="q6928:25_answer" disabled="disabled" value="3" id="q6928:25_answer3" /><label for="q6928:25_answer3" class="m-l-1"><span class="answernumber">d. </span>Organización informal.</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback">Respuesta correcta</div><div class="rightanswer">The correct answer is: Liderazgo
+formal.</div></div></div></div></div><input type="hidden" name="sesskey" value="Hl8vwZ0rXm" /><div class="submitbtns"><input type="submit" class="questionflagsavebutton btn btn-secondary" name="savingflags" value="Save the state of the flags" /></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://av.iesromerovargas.com/mod/quiz/view.php?id=19756">Finish review</a></div></div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section data-region="blocks-column" class="hidden-print">
+                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id=&quot;mod_quiz_navblock_title&quot;&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock"
+     class=" block block__fake  card mb-3"
+     role="navigation"
+     data-block="_fake"
+          aria-labelledby="instance-0-header"
+     >
+
+    <div class="card-body">
+
+            <h5 id="instance-0-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton1" title="Incorrect" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton2" title="Correct" data-quiz-page="1" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton3" title="Correct" data-quiz-page="2" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton4" title="Correct" data-quiz-page="3" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton5" title="Correct" data-quiz-page="4" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton6" title="Correct" data-quiz-page="5" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton7" title="Correct" data-quiz-page="6" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton8" title="Correct" data-quiz-page="7" href="#q8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton9" title="Correct" data-quiz-page="8" href="#q9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton10" title="Correct" data-quiz-page="9" href="#q10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton11" title="Correct" data-quiz-page="10" href="#q11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>11<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton12" title="Correct" data-quiz-page="11" href="#q12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>12<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton13" title="Correct" data-quiz-page="12" href="#q13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>13<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton14" title="Correct" data-quiz-page="13" href="#q14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>14<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton15" title="Correct" data-quiz-page="14" href="#q15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>15<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton16" title="Correct" data-quiz-page="15" href="#q16"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>16<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton17" title="Correct" data-quiz-page="16" href="#q17"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>17<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton18" title="Correct" data-quiz-page="17" href="#q18"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>18<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton19" title="Correct" data-quiz-page="18" href="#q19"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>19<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton20" title="Correct" data-quiz-page="19" href="#q20"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>20<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton21" title="Correct" data-quiz-page="20" href="#q21"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>21<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton22" title="Correct" data-quiz-page="21" href="#q22"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>22<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton23" title="Correct" data-quiz-page="22" href="#q23"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>23<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton24" title="Correct" data-quiz-page="23" href="#q24"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>24<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton25" title="Correct" data-quiz-page="24" href="#q25"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>25<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;showall=0">Show one page at a time</a><a class="mod_quiz-next-nav" href="https://av.iesromerovargas.com/mod/quiz/view.php?id=19756">Finish review</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                    </section>
+                </div>
+            </div>
+                <div class="m-t-2 m-b-1">
+<div class="row">
+    <div class="col-md-4">        <div class="pull-left">
+                <a href="https://av.iesromerovargas.com/mod/resource/view.php?id=19755&forceview=1" id="prev-activity-link" class=""  classes="btn btn-link"  title="UT 3. EIE. Power" >&#x25C4; UT 3. EIE. Power</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://av.iesromerovargas.com/course/jumpto.php" class="form-inline" id="url_select_f5dbf02c283b6c18">
+        <input type="hidden" name="sesskey" value="Hl8vwZ0rXm">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity"  id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected>Jump to...</option>
+                    <option value="/mod/resource/view.php?id=19712&amp;forceview=1" >Criterios de calificación</option>
+                    <option value="/mod/resource/view.php?id=20172&amp;forceview=1" >Cronograma Aproximado</option>
+                    <option value="/mod/resource/view.php?id=20224&amp;forceview=1" >Contenido mínimo del proyecto</option>
+                    <option value="/mod/resource/view.php?id=19714&amp;forceview=1" >Algunos Items de correción del proyecto empresarial</option>
+                    <option value="/mod/resource/view.php?id=19715&amp;forceview=1" >Ejemplo tabla Excel</option>
+                    <option value="/mod/resource/view.php?id=19716&amp;forceview=1" >Ejemplo tabla Excel 2</option>
+                    <option value="/mod/resource/view.php?id=20811&amp;forceview=1" >Ejemplo Excel 2020</option>
+                    <option value="/mod/resource/view.php?id=19718&amp;forceview=1" >Convenio colectivo metal 2018</option>
+                    <option value="/mod/resource/view.php?id=19719&amp;forceview=1" > Acta de los acuerdos de modificación del Acuerdo estatal del sector del metal.</option>
+                    <option value="/mod/forum/view.php?id=20810&amp;forceview=1" >Avisos</option>
+                    <option value="/mod/resource/view.php?id=19732&amp;forceview=1" >UT 1. El emprendedor. Apuntes</option>
+                    <option value="/mod/resource/view.php?id=19733&amp;forceview=1" >UT 1. El emprendedor</option>
+                    <option value="/mod/assign/view.php?id=19735&amp;forceview=1" >UT 1. Cualidades personales. Actividad</option>
+                    <option value="/mod/assign/view.php?id=19734&amp;forceview=1" >UT 1. Habilidades del emprendedor. Actividad</option>
+                    <option value="/mod/url/view.php?id=5696&amp;forceview=1" >30 ideas de negocio para importar</option>
+                    <option value="/mod/assign/view.php?id=19740&amp;forceview=1" >UT 1. 30 Ideas empresariales</option>
+                    <option value="/mod/resource/view.php?id=20194&amp;forceview=1" >Ejemplo Plan de empresa Punto 1.</option>
+                    <option value="/mod/assign/view.php?id=19737&amp;forceview=1" >UT 1. Punto 1. Proyecto de empresa. Actividad.</option>
+                    <option value="/mod/quiz/view.php?id=20522&amp;forceview=1" >UT 1. El emprendedor. Examen. 09/10/2019</option>
+                    <option value="/mod/url/view.php?id=19738&amp;forceview=1" >VÍDEOS ESPÍRITU EMPRENDEDOR</option>
+                    <option value="/mod/url/view.php?id=19741&amp;forceview=1" >Vídeo. Flipped EIE. La idea. 4:53</option>
+                    <option value="/mod/url/view.php?id=8392&amp;forceview=1" >La Increible Historia del Inventor de los Cubitos de Hielo</option>
+                    <option value="/mod/url/view.php?id=3390&amp;forceview=1" >&quot;EMPERDEDORES&quot;</option>
+                    <option value="/mod/resource/view.php?id=20441&amp;forceview=1" >Test posibles preguntas</option>
+                    <option value="/mod/resource/view.php?id=19742&amp;forceview=1" >UT 2. La empresa. Apuntes</option>
+                    <option value="/mod/assign/view.php?id=19744&amp;forceview=1" >UT 2. Resumen tipos de empresas</option>
+                    <option value="/mod/assign/view.php?id=19746&amp;forceview=1" >UT 2. Punto 2 del proyecto</option>
+                    <option value="/mod/resource/view.php?id=19747&amp;forceview=1" >Orden módulos BOE 2015</option>
+                    <option value="/mod/resource/view.php?id=19748&amp;forceview=1" >Explicación Régimen de Módulos</option>
+                    <option value="/mod/assign/view.php?id=19749&amp;forceview=1" >UT 2. Empresario individual y Sociedad Limitada</option>
+                    <option value="/mod/quiz/view.php?id=19751&amp;forceview=1" >UT 2. Examen. 29/10/2019</option>
+                    <option value="/mod/resource/view.php?id=20545&amp;forceview=1" >UT 2. Test</option>
+                    <option value="/mod/resource/view.php?id=19752&amp;forceview=1" >UT 3 EIE Apuntes</option>
+                    <option value="/mod/assign/view.php?id=19753&amp;forceview=1" >UT 3. Punto 3 del proyecto. Localización</option>
+                    <option value="/mod/resource/view.php?id=19755&amp;forceview=1" >UT 3. EIE. Power</option>
+                    <option value="/mod/resource/view.php?id=20890&amp;forceview=1" >UT 3. Preguntas Test</option>
+                    <option value="/mod/resource/view.php?id=19757&amp;forceview=1" >UT 4 EIE Apuntes</option>
+                    <option value="/mod/resource/view.php?id=19758&amp;forceview=1" >Nómina tipo</option>
+                    <option value="/mod/assign/view.php?id=19759&amp;forceview=1" >UT 4 EIE Test</option>
+                    <option value="/mod/quiz/view.php?id=19760&amp;forceview=1" >UT 4 EIE Test</option>
+                    <option value="/mod/assign/view.php?id=19761&amp;forceview=1" >UT 4. Punto 4. Gestión de personal.</option>
+                    <option value="/mod/resource/view.php?id=19762&amp;forceview=1" >Tarifas AT y EP</option>
+                    <option value="/mod/url/view.php?id=19763&amp;forceview=1" >CUADRO DE COTIZACIONES AUTONOMOS ACTUALIZADO</option>
+                    <option value="/mod/url/view.php?id=19764&amp;forceview=1" >BONIFICACIONES AUTONOMOS MENORES DE 30 AÑOS</option>
+                    <option value="/mod/url/view.php?id=19765&amp;forceview=1" >Buscador convenio</option>
+                    <option value="/mod/resource/view.php?id=19766&amp;forceview=1" >Explicación nómina</option>
+                    <option value="/mod/resource/view.php?id=19767&amp;forceview=1" >Ejemplo nómina</option>
+                    <option value="/mod/assign/view.php?id=19769&amp;forceview=1" >UT 4 Nómina 1</option>
+                    <option value="/mod/assign/view.php?id=19771&amp;forceview=1" >UT 4 Nómina 1_2</option>
+                    <option value="/mod/assign/view.php?id=19773&amp;forceview=1" >UT 4 Nómina 2</option>
+                    <option value="/mod/assign/view.php?id=19775&amp;forceview=1" >UT 4 Nómina 3</option>
+                    <option value="/mod/assign/view.php?id=19777&amp;forceview=1" >UT 4 Nómina 4</option>
+                    <option value="/mod/assign/view.php?id=19779&amp;forceview=1" >UT 4 Nómina 5</option>
+                    <option value="/mod/assign/view.php?id=19781&amp;forceview=1" >UT 4. Nómina 6</option>
+                    <option value="/mod/assign/view.php?id=19783&amp;forceview=1" >UT 4. Nómina 7</option>
+                    <option value="/mod/assign/view.php?id=19785&amp;forceview=1" >UT 4. Nómina 8</option>
+                    <option value="/mod/resource/view.php?id=19787&amp;forceview=1" >Referencia proyecto Nav</option>
+                    <option value="/mod/resource/view.php?id=19788&amp;forceview=1" >Referencia proyecto San</option>
+                    <option value="/mod/resource/view.php?id=19731&amp;forceview=1" >Ejemplo análisis DAFO</option>
+                    <option value="/mod/resource/view.php?id=3962&amp;forceview=1" >RESUMEN PASOS CREACIÓN DE EMPRESAS</option>
+                    <option value="/mod/assign/view.php?id=19789&amp;forceview=1" >UT 5. Punto 5 del proyecto. PLAN DE MARKETING. Fecha tope de entrega: 14/12/2018 a las 10:20</option>
+                    <option value="/mod/resource/view.php?id=19790&amp;forceview=1" >EJEMPLO MATRIZ DAFO</option>
+                    <option value="/mod/url/view.php?id=19791&amp;forceview=1" >CICLO DE VIDA DE UN PRODUCTO</option>
+                    <option value="/mod/url/view.php?id=19792&amp;forceview=1" >CICLO DE VIDA DE UN PRODUCTO EN MARKETING</option>
+                    <option value="/mod/url/view.php?id=19793&amp;forceview=1" >PUBLICIDAD EN EL PUNTO DE VENTA</option>
+                    <option value="/mod/url/view.php?id=19794&amp;forceview=1" >ANUNCIOS ANTIGUOS</option>
+                    <option value="/mod/url/view.php?id=19795&amp;forceview=1" >MARCAS CONOCIDAS, ORIGEN</option>
+                    <option value="/mod/url/view.php?id=19796&amp;forceview=1" >VIDEO DE LOGO E ISOTIPOS</option>
+                    <option value="/mod/url/view.php?id=19797&amp;forceview=1" >MARKETING COCA COLA</option>
+                    <option value="/mod/quiz/view.php?id=19798&amp;forceview=1" >UT 5 EIE</option>
+                    <option value="/mod/resource/view.php?id=19799&amp;forceview=1" >UT 5 EIE Apuntes</option>
+                    <option value="/mod/resource/view.php?id=19800&amp;forceview=1" >Sanchez referencia plan de marketing</option>
+                    <option value="/mod/resource/view.php?id=19801&amp;forceview=1" >Referencia para plan de marketing</option>
+                    <option value="/mod/resource/view.php?id=19802&amp;forceview=1" >Ceballo Referencia para elaborar el plan de marketing</option>
+                    <option value="/mod/quiz/view.php?id=19803&amp;forceview=1" >UT 5. EIE. Examen.</option>
+                    <option value="/mod/url/view.php?id=19804&amp;forceview=1" >Vídeo. Responsabilidad social y análisis DAFO. 5:45</option>
+                    <option value="/mod/url/view.php?id=19805&amp;forceview=1" >Vídeo. Marketing Mix I: El producto. 9:18</option>
+                    <option value="/mod/url/view.php?id=19806&amp;forceview=1" >Vídeo. Marketing Mix II: El precio. 4:48</option>
+                    <option value="/mod/url/view.php?id=19807&amp;forceview=1" >Vídeo. Marketing Mix III: Comunicación y distribución. 7:54</option>
+                    <option value="/mod/resource/view.php?id=19808&amp;forceview=1" >UT 6 EIE Apuntes</option>
+                    <option value="/mod/quiz/view.php?id=19809&amp;forceview=1" >UT 6 EIE</option>
+                    <option value="/mod/assign/view.php?id=19811&amp;forceview=1" >UT 6. Ejercicio punto muerto 1. Fecha 18/12/2018 Hora: 14:50</option>
+                    <option value="/mod/assign/view.php?id=19813&amp;forceview=1" >UT 6. Ejercicio punto muerto 2. Fecha tope 08/01/2019. hora 23:59.</option>
+                    <option value="/mod/assign/view.php?id=19815&amp;forceview=1" >UT 6. Ejercicio punto muerto 3. Fecha tope 11/01/2019. Hora: 10:20</option>
+                    <option value="/mod/assign/view.php?id=19817&amp;forceview=1" >UT 6. Ejercicios 4 y 5. Fecha tope: 14/01/2019. Hora: 23:59</option>
+                    <option value="/mod/assign/view.php?id=19820&amp;forceview=1" >UT 6. Ejercicios 6 y 7</option>
+                    <option value="/mod/url/view.php?id=19824&amp;forceview=1" >Video. Los costes en la empresa. 5:37</option>
+                    <option value="/mod/url/view.php?id=19825&amp;forceview=1" >Video. Beneficio y umbral de rentabilidad. 8:00</option>
+                    <option value="/mod/resource/view.php?id=19826&amp;forceview=1" >UT 7. Finanzas. Apuntes.</option>
+                    <option value="/mod/resource/view.php?id=20807&amp;forceview=1" >UT 7. Test</option>
+                    <option value="/mod/resource/view.php?id=19829&amp;forceview=1" >Ficha ejercicios balance</option>
+                    <option value="/mod/resource/view.php?id=19830&amp;forceview=1" >Ficha ejercicios ratios.</option>
+                    <option value="/mod/assign/view.php?id=19831&amp;forceview=1" >UT 7. Ejercicio balance y ratios 1.</option>
+                    <option value="/mod/assign/view.php?id=19832&amp;forceview=1" >UT 7. Ejercicio balance y ratios 2</option>
+                    <option value="/mod/assign/view.php?id=19833&amp;forceview=1" >UT 7. Ejercicios balance y ratios 3.</option>
+                    <option value="/mod/assign/view.php?id=19834&amp;forceview=1" >UT 7. Ejercicio 4. Balance</option>
+                    <option value="/mod/url/view.php?id=19835&amp;forceview=1" >VIDEO RENTING LEASING</option>
+                    <option value="/mod/url/view.php?id=19836&amp;forceview=1" >RESUMEN MODOS DE FINANCIAR LA EMPRESA</option>
+                    <option value="/mod/url/view.php?id=19837&amp;forceview=1" >VIDEO PRÉSTAMO Y CRÉDITO</option>
+                    <option value="/mod/url/view.php?id=19846&amp;forceview=1" >Vídeo. Gasto e inversión. 4:23</option>
+                    <option value="/mod/url/view.php?id=19847&amp;forceview=1" >Vídeo. Fuentes de financiación propias. 5:05</option>
+                    <option value="/mod/url/view.php?id=19848&amp;forceview=1" > Vídeo. Fuentes de financiación ajenas (1ª parte). 5:31</option>
+                    <option value="/mod/url/view.php?id=19849&amp;forceview=1" >Vídeo. Fuentes de financiación ajenas (2ª parte)</option>
+                    <option value="/mod/url/view.php?id=19850&amp;forceview=1" >Vídeo. Crowdfunding y ayudas públicas. 6:09</option>
+                    <option value="/mod/resource/view.php?id=19851&amp;forceview=1" >Apuntes UT 8.</option>
+                    <option value="/mod/assign/view.php?id=19853&amp;forceview=1" >UT 8. Test</option>
+                    <option value="/mod/assign/view.php?id=19854&amp;forceview=1" >(Proyecto) 7. Trámites de puesta en funcionamiento.</option>
+                    <option value="/mod/url/view.php?id=19858&amp;forceview=1" >Trámites seguridad social</option>
+                    <option value="/mod/url/view.php?id=19859&amp;forceview=1" >Registro mercantil central</option>
+                    <option value="/mod/url/view.php?id=19860&amp;forceview=1" >Trámites AEAT (Hacienda estatal)</option>
+                    <option value="/mod/url/view.php?id=19861&amp;forceview=1" >Impuesto Transmisiones patrimoniales y actos jurídicos</option>
+                    <option value="/mod/url/view.php?id=19862&amp;forceview=1" >ARTICULO LETRA DE CAMBIO</option>
+                    <option value="/mod/resource/view.php?id=19863&amp;forceview=1" >Apuntes ampliados</option>
+                    <option value="/mod/resource/view.php?id=19864&amp;forceview=1" >Trámites, pequeña descripción y lugar</option>
+                    <option value="/mod/resource/view.php?id=19865&amp;forceview=1" >Trámites genéricos para las Sociedades</option>
+                    <option value="/mod/quiz/view.php?id=19866&amp;forceview=1" >UT 8 EIE</option>
+                    <option value="/mod/assign/view.php?id=19867&amp;forceview=1" >UT 9. Índice numerado del contenido de la carpeta Anexos (debes imprimirlo).</option>
+                    <option value="/mod/assign/view.php?id=19868&amp;forceview=1" >UT 9. Proyecto</option>
+                    <option value="/mod/url/view.php?id=19869&amp;forceview=1" >ELEVATOR PITCH</option>
+                    <option value="/mod/assign/view.php?id=19870&amp;forceview=1" >Proyecto Recuperación word</option>
+                    <option value="/mod/assign/view.php?id=19871&amp;forceview=1" >Proyecto recuperación Anexos</option>
+                    <option value="/mod/assign/view.php?id=19872&amp;forceview=1" >Proyecto recuperación Excel</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="pull-right">
+                <a href="https://av.iesromerovargas.com/mod/resource/view.php?id=20890&forceview=1" id="next-activity-link" class=""  classes="btn btn-link"  title="UT 3. Preguntas Test" >UT 3. Preguntas Test &#x25BA;</a>
+
+        </div>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex " aria-hidden="false" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=88" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-EIE</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/user/index.php?id=88" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="88">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-users fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Participants</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/badges/view.php?type=2&amp;id=88" data-key="badgesview" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="88">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-shield fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Badges</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/admin/tool/lp/coursecompetencies.php?courseid=88" data-key="competencies" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="88">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-check-square-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Competencies</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Dashboard</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-home fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Site home</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/calendar/view.php?view=month&amp;course=88" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Calendar</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-file-o fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Private files</span>
+                    </div>
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body">My courses</span>
+                    </div>
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=74" data-key="74" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-DAW</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=43" data-key="43" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-DIW</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=72" data-key="72" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-DWEC</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=73" data-key="73" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-DWES</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=88" data-key="88" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-EIE</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://av.iesromerovargas.com/course/view.php?id=99" data-key="99" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  aria-label=""></i>
+                        </span>
+                        <span class="media-body ">2DAW-TUTORIA</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+
+<a href="#" id="back-to-top" class="btn btn-primary btn-lg" role="button" title="Back to Top and Scrollspy"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+
+<footer id="page-footer" class="py-3 text-light">
+    <div class="container">
+
+        <div id="course-footer"></div>
+
+        <div class="row">
+
+                <div class="col-md-8">
+                    
+
+                    <div class="logininfo">You are logged in as <a href="https://av.iesromerovargas.com/user/profile.php?id=6686" title="View profile">Diaz Duran, Ruben Fermin</a> (<a href="https://av.iesromerovargas.com/login/logout.php?sesskey=Hl8vwZ0rXm">Log out</a>)</div>
+
+                    <div class="homelink"><a href="https://av.iesromerovargas.com/course/view.php?id=88">2DAW-EIE</a></div>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="brandbox">
+
+                        
+                            <ul class="footercontact">
+                                
+                                
+                                
+                            </ul>
+
+                        
+
+                    </div>
+                </div>
+
+        </div>
+        <nav class="nav navbar-nav d-md-none">
+                <ul class="list-unstyled pt-3">
+                                    <li>Enlaces Rápidos</li>
+                                <li>
+                                    <ul class="list-unstyled ml-3">
+                                                        <li><a href="http://av.iesromerovargas.com/mod/forum/view.php?id=2" title=" Novedades"> Novedades</a></li>
+                                                        <li><a href="http://av.iesromerovargas.com/calendar/view.php" title=" Eventos"> Eventos</a></li>
+                                                        <li><a href="http://www.iesromerovargas.com" title=" Web Romero Vargas"> Web Romero Vargas</a></li>
+                                                        <li><a href="http://fcteu-iesromerovargas.blogspot.com.es/" title=" Blog Erasmus+"> Blog Erasmus+</a></li>
+                                    </ul>
+                                </li>
+                                    <li><a href="#" title="Language">English ‎(en)‎</a></li>
+                                <li>
+                                    <ul class="list-unstyled ml-3">
+                                                        <li><a href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                                        <li><a href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a></li>
+                                                        <li><a href="https://av.iesromerovargas.com/mod/quiz/review.php?attempt=5488&amp;cmid=19756&amp;lang=fr" title="Français ‎(fr)‎">Français ‎(fr)‎</a></li>
+                                    </ul>
+                                </li>
+                </ul>
+        </nav>
+        <a href="https://download.moodle.org/mobile?version=2018051701.09&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://av.iesromerovargas.com/lib/requirejs.php/1571147433/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://av.iesromerovargas.com/lib/javascript.php/1571147433/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://av.iesromerovargas.com/lib/javascript.php/1571147433/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://av.iesromerovargas.com/lib/javascript.php/1571147433/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://av.iesromerovargas.com/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+
+require(['jquery'], function($) {
+    $('#single_select5dbf02c283b6c5').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5dbf02c283b6c4').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                $('#url_select_f5dbf02c283b6c18').submit();
+            });
+        });
+    ;
+
+require(['jquery'], function($) {
+    $('#single_select5dbf02c283b6c20').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5dbf02c283b6c19').submit();
+        }
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['jquery','theme_boost/tooltip'], function($){$('[data-tooltip="tooltip"]').tooltip()});
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(39363, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/av.iesromerovargas.com\/lib\/javascript.php\/1571147433\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/theme/fordson/javascript/scrolltotop.js"></script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/theme/fordson/javascript/scrollspy.js"></script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/theme/fordson/javascript/tooltipfix.js"></script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/theme/fordson/javascript/blockslider.js"></script>
+<script type="text/javascript" src="https://av.iesromerovargas.com/lib/javascript.php/1571147433/theme/fordson/javascript/courseblock.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random5dbf02c283b6c1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/av.iesromerovargas.com\/question\/toggleflag.php", [{"src":"https:\/\/av.iesromerovargas.com\/theme\/image.php\/fordson\/core\/1572518994\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/av.iesromerovargas.com\/theme\/image.php\/fordson\/core\/1572518994\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random5dbf02c283b6c1'); });
+ M.util.js_pending('random5dbf02c283b6c2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5dbf02c283b6c2'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5dbf02c283b6c21'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5dbf02c283b6c21'); });
+ M.util.js_pending('random5dbf02c283b6c22'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5dbf02c283b6c22'); });
+})();
+//]]>
+</script>
+
+
+    </div>
+
+</footer>
+
+</body>
+</html>
