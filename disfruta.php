@@ -31,7 +31,7 @@
     $fruta = [];
     $cont = [];
     for ($i = 0; $i < $n; $i++) {
-        $nFruta = rand(dechex(hexdec(127815)), dechex(hexdec(127827)));
+        $nFruta = dechex(rand(hexdec("127815"), hexdec("127827")));
         if (in_array($nFruta, $fruta)) {
             $index = array_search($nFruta, $fruta);
             $cont[$index] = $cont[$index] + 1;
