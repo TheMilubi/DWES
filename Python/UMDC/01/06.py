@@ -29,23 +29,20 @@ def triangular_calculado(n):
     return int(n * (n+1)/2)
 
 
-leyendo = True
-while leyendo:
+salir = False
+while not salir:
     try:
         n = int(input("Introduzca número de triangulares a calcular: "))
-        leyendo = False
+        salir = True
     except ValueError:
         print("Introduzca solo valores numéricos enteros\n")
 
-for i in range(1, n+1):
-    # print (i,"  -  ",triangularIterativo(i))
-    triangular_iterativo(i)
+print("Triangular iterativo:")
+for i in range(1, n + 1):
+    print(str(i).rjust(3, ' '), " - ",
+          str(triangular_iterativo(i)).ljust(3, ' '), sep="")
 
-
-print("Ya")
-
-for i in range(1, n+1):
-    print(i, "  -  ", triangular_calculado(i))
-    triangular_calculado(i)
-
-print("Otro ya")
+print("Triangular calculado:")
+for i in range(1, n + 1):
+    print(str(i).rjust(3, ' '), " - ",
+          str(triangular_calculado(i)).ljust(3, ' '), sep="")

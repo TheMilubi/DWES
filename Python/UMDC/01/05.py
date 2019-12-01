@@ -6,12 +6,12 @@ se le pidan al usuario.
 """
 
 
-leyendo = True
-while leyendo:
+salir = False
+while not salir:
     try:
         inicial = int(input("Introduzca valor inicial: "))
         final = int(input("Introduzca valor final  : "))
-        leyendo = False
+        salir = True
     except ValueError:
         print("Introduzca solo valores numéricos enteros\n")
 

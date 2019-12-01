@@ -5,18 +5,18 @@ Celsius. Recordar que la fórmula para la conversión es: F = 9/5 * C + 32.
 """
 
 
-def fahrenheit_celsius(f):
-    return (f - 32)*5/9
+def fahrenheit_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5 / 9
 
 
-leyendo = True
-while leyendo:
+salir = False
+while not salir:
     try:
         faren = float(input("Introduzca temperatura en grados Fahrenheit: "))
-        leyendo = False
+        salir = True
     except ValueError:
         print("Introduzca un valor numérico\n")
 
 
-print("La temperatura equivalente en grados Fahrenheit es :",
-      fahrenheit_celsius(faren))
+print("La temperatura equivalente en grados Celsius es: {:.1f}".format(
+    fahrenheit_celsius(faren)))

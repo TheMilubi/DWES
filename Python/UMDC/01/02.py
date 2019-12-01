@@ -12,19 +12,18 @@ años a calcular.
 """
 
 
-def interes_compuesto(ci, x, n):
-    return ci * (1 + x / 100) ** n
+def interes(ci, i, n):
+    return ci * (1 + i / 100) ** n
 
 
-leyendo = True
-while leyendo:
+salir = False
+while not salir:
     try:
-        capital_inicial = float(input("Introduce el capital inicial: "))
+        ci = float(input("Introduce el capital inicial: "))
         anios = float(input("Introduce los años  : "))
-        interes = float(input("Introduce el interés (%): "))
-        leyendo = False
+        i = float(input("Introduce el interés (%): "))
+        salir = True
     except ValueError:
         print("Error en la introducción de datos\n")
 
-print("Total a pagar: ", interes_compuesto(
-    capital_inicial, interes, anios), "euros")
+print("Total a pagar: {:.2f} euros".format(interes(ci, i, anios)))
