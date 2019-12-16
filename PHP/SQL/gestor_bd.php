@@ -11,7 +11,10 @@
 <body>
     <div id="encabezado">
         <h1>Gestor para la Base de Datos</h1>
-        <?php $dwes = new PDO("mysql:host=localhost;dbname=dwes", "dwes", "abc123"); ?>
+        <?php
+        $dwes = new PDO("mysql:host=localhost;dbname=dwes", "dwes", "abc123");
+        $_POST['dwes'] = $dwes;
+        ?>
         <form id="form_seleccion" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             Tabla:
             <select name="tabla">
@@ -26,8 +29,8 @@
                     $registro = $resultado->fetch(PDO::FETCH_ASSOC);
                     $columnas = [];
                     foreach ($registro as $key => $value) {
-                        if (preg_match('/^\d+$/', $value)) $columnas["$key"] = "int";
-                        else $columnas["$key"] = "str";
+                        if (preg_match('/^\d+$/', $value)) $columnas["$key"] = "number";
+                        else $columnas["$key"] = "text";
                     }
                     $num_columnas = count($columnas);
                 }
@@ -42,94 +45,43 @@
                 }
                 ?>
             </select>
-            Orden:
-            <select name="orden">
-                <?php
-                if (isset($_POST['orden'])) {
-                    $_SESSION['orden'] = $_POST['orden'];
-                }
-                if (isset($_SESSION['orden'])) {
-                    $orden = $_SESSION['orden'];
-                }
-                ?>
-                <option <?php if (isset($orden) && $orden == "SELECT") echo " selected='true'"; ?> value="SELECT">SELECT</option>
-                <option <?php if (isset($orden) && $orden == "INSERT") echo " selected='true'"; ?> value="INSERT">INSERT</option>
-                <option <?php if (isset($orden) && $orden == "UPDATE") echo " selected='true'"; ?> value="UPDATE">UPDATE</option>
-                <option <?php if (isset($orden) && $orden == "DELETE") echo " selected='true'"; ?> value="DELETE">DELETE</option>
-            </select>
-
-            <?php
-            if (isset($tabla) && isset($orden) && ($orden == "UPDATE" || $orden == "DELETE")) {
-                echo "<p>Condición: <br>";
-                $sql = "show index from $tabla where Key_name = 'PRIMARY'";
-                $query = $dwes->query($sql);
-                $primary_keys = [];
-                while ($registro = $query->fetch(PDO::FETCH_ASSOC)) {
-                    $primary_keys[] = $registro['Column_name'];
-                    echo "<p>${registro['Column_name']}: ";
-                    $tipo = $columnas["${registro['Column_name']}"];
-                    $type = ($tipo == "int") ? 'number' : 'text';
-                    echo "<input type='" . $type . "' name='c_${registro['Column_name']}'></p>";
-                }
-                echo "</p>";
-            }
-
-            ?>
-            <?php
-            if (isset($tabla) && isset($orden) && ($orden == "INSERT" || $orden == "UPDATE")) {
-                echo "<p>Valores a insertar: <br>";
-                foreach ($columnas as $columna => $tipo) {
-                    echo "<p>$columna: ";
-                    $tipo = ($tipo == "int") ? 'number' : 'text';
-                    echo "<input type='" . $tipo . "' name='$columna'></p>";
-                }
-                echo "</p>";
-            }
-            ?>
-
-            <input type="submit" value="Realizar orden" name="enviar" />
+            <a href="mostrar.php">Mostrar tabla</a>
             <a href="gestor_bd.php">Volver</a>
         </form>
     </div>
     <div id="contenido">
-        <h2>Resultado de consulta u orden</h2>
-        <?php
-        // Si se recibió un código de producto y no se produjo ningún error
-        // mostramos el stock de ese producto en las distintas tiendas
-        if (isset($orden) && isset($tabla)) {
-            $sql = "";
-            switch ($orden) {
-                case "SELECT":
-                    mostrarDatos($tabla, $dwes);
-                    break;
-                case "INSERT":
-                    insertarDato($tabla, $columnas, $dwes);
-                    mostrarDatos($tabla, $dwes);
-                    break;
-                case "UPDATE":
-                    actualizarDato($tabla, $columnas, $primary_keys, $dwes);
-                    mostrarDatos($tabla, $dwes);
-                    break;
-                case "DELETE":
-                    borrarDato($tabla, $columnas, $primary_keys, $dwes);
-                    mostrarDatos($tabla, $dwes);
-                    break;
-            }
-        }
-        ?>
+
+
     </div>
     <?php
-    function mostrarDatos($tabla, $dwes)
+    function mostrarDatos($tabla, $columnas, $primary_keys, $dwes)
     {
         $sql = "SELECT * FROM $tabla";
         $resultado = $dwes->query($sql);
-        while ($registro = $resultado->fetch(PDO::FETCH_ASSOC)) {
-            echo "<p>[";
-            foreach ($registro as $key => $value) {
-                echo "<pre>   $key: $value<br></pre>";
-            }
-            echo "]</p>";
+        echo "<table>";
+        echo "<tr>";
+        foreach ($columnas as $columna => $tipo) {
+            echo "<td>$columna</td>";
         }
+        echo "</tr>";
+        echo "<tr>";
+        foreach ($columnas as $columna => $tipo) {
+            echo "<td><input type='$tipo' name='$columna'</td>";
+        }
+        echo "<a href='insertar.php'>Insertar</a>";
+        echo "</tr>";
+        while ($registro = $resultado->fetch(PDO::FETCH_ASSOC)) {
+            echo "<tr>";
+            foreach ($registro as $key => $value) {
+                if (in_array($key, $primary_keys)) {
+                    echo "<td name='c_$key'>$value</td>";
+                }
+                echo "<td>$value</td>";
+            }
+            echo "<td><a href='modificar.php'>Actualizar</a></td><td><a href='eliminar.php'>Eliminar</a></td>";
+            echo "</tr>";
+        }
+        echo "</table>";
     }
     function insertarDato($tabla, $columnas, $dwes)
     {
