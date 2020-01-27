@@ -1,0 +1,4 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+RewriteRule ^ejercicio/([1-9])$  /ejercicio$1.php
