@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}{% endblock titulo %}</title>
+</head>
+
+<body>
+    <header>
+    <h2>
+        {% block header %}
+        {% endblock header %}
+    </h2>
+    </header>
+    <section>
+        {% block contenido %}
+        {% endblock contenido %}
+    </section>
+    <footer>
+        {% block footer %}
+        {% endblock footer %}
+    </footer>
+</body>
+
+</html>

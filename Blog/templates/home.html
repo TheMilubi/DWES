@@ -1,6 +1,12 @@
-<h1>Message board homepage</h1>
-<ul>
+{% extends 'base.html' %}
+{% block titulo %}Blog{% endblock titulo %}
+{% block header %}Blog
+{% endblock header %}
+{% block contenido %}
     {% for post in object_list %}
-    <li>{{ post }}</li>
+        <div class="post-entry">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.body }}</p>
+        </div>
     {% endfor %}
-</ul>
+{% endblock contenido %}
