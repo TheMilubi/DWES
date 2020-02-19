@@ -1,0 +1,15 @@
+.post-entry {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+h2, span {
+    width: max-content;
+    margin-right: 2%;
+}
+
+
+p {
+    width: 100%
+}
