@@ -1,7 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    padding: 1rem;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.nav-left{
+    width: 50%;
+    border-bottom: 1px darkred solid;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.nav-right{
+    width: 50%;
+    border-bottom: 1px darkred solid;
+    font-size: 1rem;
+    padding: 1rem;
+}
+header p, header a, header h2{
+    width: 100%;
+}
+
 .post-entry {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding: 1rem
 }
 
 h2, span {
@@ -11,5 +43,8 @@ h2, span {
 
 
 p {
-    width: 100%
+    width: 100%;
+}
+*{
+    margin-bottom: 1rem;
 }
